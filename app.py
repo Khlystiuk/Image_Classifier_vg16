@@ -73,7 +73,28 @@ with tab1:
  
 with tab2:
     st.header('About')
-    c2.markdown('<h4 style="color:#1642e0; font-family: Cascadia Code;">VGG16 is a convolutional neural network trained on a subset of the ImageNet dataset, a collection of over 14 million images belonging to 22,000 categories. K. Simonyan and A. Zisserman proposed this model in the 2015 paper, Very Deep Convolutional Networks for Large-Scale Image Recognition. </h1>', unsafe_allow_html=True)
-    c2.markdown('<h4 style="color:#bd2709; font-family: Cascadia Code;">You also can check out this model in GitHub:</h1>', unsafe_allow_html=True)
+    background_image = "https://i.postimg.cc/d1QbbHMF/bck.png"
+    html_code = f"""
+    <style>
+    .background-image {{
+        background-image: url("{background_image}");
+        background-size: cover;
+        background-position: center;
+        color: #1642e0;
+        font-size: 16px;
+        font-family: "Roboto";
+        text-align: left;
+        padding: 20px;
+        margin-top: 10px; /* Adjust margin to position the background image */
+        margin-bottom: 10px; /* Adjust margin to position the background image */
+    }}
+    </style>
+
+    <div class="background-image">
+        {"VGG16 is a convolutional neural network trained on a subset of the ImageNet dataset, a collection of over 14 million images belonging to 22,000 categories. K. Simonyan and A. Zisserman proposed this model in the 2015 paper, Very Deep Convolutional Networks for Large-Scale Image Recognition."}
+        {"You also can check out this model in GitHub:"}
+    </div>
+    """
+    # Display the background image with text using markdown
     st.markdown(html_code, unsafe_allow_html=True)
     st.write("https://github.com/poojatambe/VGG-Image-classification")
