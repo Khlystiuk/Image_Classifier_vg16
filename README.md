@@ -16,5 +16,5 @@ images should be <200 mb size
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://insert_here_my_linksimple-prediction.streamlitapp.com/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://imageclassifiervg16-khlystiuk.streamlit.app/)
 
